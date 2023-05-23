@@ -1,0 +1,40 @@
+[
+    {
+        "picture_1": "https://cdn.pixabay.com/photo/2017/02/28/13/31/doll-2105742_640.jpg",
+        "picture_2": "https://res.cloudinary.com/mattel-dtc-cloud/image/upload/w_360,h_360,c_pad/shop-us-prod/products/trvqfsbwenndhrthnqsd_6b9e8a78-0abe-41c4-abd3-e7a39925a704.jpg?v=1679019221",
+        "picture_3": "https://res.cloudinary.com/mattel-dtc-cloud/image/upload/w_360,h_360,c_pad/f_auto/q_auto:low/shop-ag-prod/products/xmc3dpyqvde4j2z8370e.png?v=1684448427",
+        "toy_name_1": "Rubber Toy",
+        "toy_name_2": "Prom Queen",
+        "toy_name_3": "Kavi",
+        "seller": "Rafsan",
+        "seller_email": "rafsan@gmail.com",
+        "price_1": 600,
+        "price_2": 300,
+        "price_3": 200,
+        "available_quantity_1": "300",
+        "available_quantity_2": "350",
+        "available_quantity_3": "320",
+        "detail_description_1": "Bébé Bath Oceane loves to splish-splash and play with her cute frog friend in the water!",
+        "detail_description_2": "The doll's head and limbs are made of soft vinyl that is lightly scented with vanilla, a Corolle signature",
+        "detail_description_3": "Whether its music or dance, Kavi loves performing. She even choreographs a Bollywood routine with her friends for their school revue. With so much excitement, can Kavi find a way to stay on top of her schoolwork and get her dance moves down before the curtain goes up?"
+    },
+    {
+        "picture_1": "https://cdn.pixabay.com/photo/2018/08/12/17/59/doll-3601317_640.jpg",
+        "picture_2": "https://res.cloudinary.com/mattel-dtc-cloud/image/upload/w_360,h_360,c_pad/shop-us-prod/products/p92o9jetke36cclro13f_1d587c67-8af4-40ae-8bc4-c66a62665a48.jpg?v=1674174517",
+        "picture_3": "https://res.cloudinary.com/mattel-dtc-cloud/image/upload/w_360,h_360,c_pad/f_auto/q_auto:low/shop-ag-prod/products/ohfmtyu4pb9pqv1uisbi.png?v=1684448511",
+        "toy_name_1": "Baby girl green",
+        "toy_name_2": "Rosa Parks",
+        "toy_name_3": "Nicki",
+        "seller": "Rafsan",
+        "seller_email": "rafsan@gmail.com",
+        "price_1": 350,
+        "price_2": 60,
+        "price_3": 690,
+        "available_quantity_1": "200",
+        "available_quantity_2": "50",
+        "available_quantity_3": "350",
+        "detail_description_1": "An 18 Kavi™ doll with brown eyes that open and close, and medium-length layered dark-brown hair styled in a half ponytail. She has a soft cotton body, and her movable head and limbs are made of smooth vinyl.",
+        "detail_description_2": "A layered, cropped mesh top with a multicolored print; silver jogger-style pants; pink tennis shoes; and cotton underwear",
+        "detail_description_3": "Nicki is a very pretty doll and Im glad that the Marie Grace face mold was brought back for her. I had just gotten the new Truly me 119 with that face mold right before Kavi came out and I was a little upset that they looked so similar."
+    }
+]
