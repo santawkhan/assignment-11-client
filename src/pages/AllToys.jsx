@@ -7,7 +7,7 @@ const AllToys = () => {
     useEffect(() => {
         fetch('http://localhost:5000/addedToy')
             .then(res => res.json())
-            .then(data => setAllToys(data))
+            .then(data => console.log(data))
     }, [])
     return (
         <div>

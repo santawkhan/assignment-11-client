@@ -10,6 +10,7 @@ import SignUp from "../pages/SignUp/SignUp";
 import DollsDetailsOne from "../pages/DollsDetailsOne";
 import DollDetailsTwo from "../pages/DollDetailsTwo";
 import DollDetailsThree from "../pages/DollDetailsThree";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -39,7 +40,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/myToys',
-                element: <MyToys></MyToys>
+                element: <PrivateRoute><MyToys></MyToys></PrivateRoute>
             },
             {
                 path: '/login',
