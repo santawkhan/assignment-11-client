@@ -1,49 +1,80 @@
 import React from 'react';
-import banner from '../assets/images/banner.jpg'
+import banner from '../assets/images/banner.jpg';
+import banner2 from '../assets/images/banner2.jpg';
+import banner3 from '../assets/images/banner3.jpg';
+import banner4 from '../assets/images/banner.4.jpg';
+import gallary1 from '../assets/images/gone.jpg'
+import gallary2 from '../assets/images/gtwo.jpg'
+import gallary3 from '../assets/images/gthree.jpg'
+import gallary4 from '../assets/images/g4.jpg'
+import gallary5 from '../assets/images/g5.jpg'
+import gallary6 from '../assets/images/gsix.jpg'
+
+
 
 const Header = () => {
     return (
-        <div className='mt-3'><div className="carousel w-full">
-            <div id="item1" className="carousel-item w-full relative">
-                <img src={banner} className="w-full " />
-
-                <div className="absolute  transform  left-5 right-5 top-1/2">
-                    <h3 className='text-3xl font-bold font-mono text-white'>Pick the Best Toy For Your Kid</h3>
-                    <p className='text-xl text-cyan-500'>We Offer a premium service,whether <br /> you are shopping at our flagship storesor our website</p>
-                    <div className="form-control w-36 mt-4 flex flex-row gap-3">
-                        <div> <input type="text" placeholder="Search" className="input input-bordered" /></div>
-                        <button className="btn btn-outline btn-primary ">Search</button>
+        <div>
+            <div className="carousel w-full">
+                <div id="item1" className="carousel-item w-full">
+                    <img src={banner3} className="w-full rounded h-screen" />
+                    <div className="absolute  transform -translate-y-1/2 left-10 mt-4 right-5 top-1/2 ">
+                        <h3 className='text-6xl text-black font-bold font-serif'>Collect Your Desired <br /> Doll For Your Child</h3>
+                        <p className='text-4xl text-black font-medium'>Join our community to find <br /> your rare items,and play aroun here.</p>
+                        <button className="btn btn-active mt-3 text-black">Discover Now</button>
                     </div>
                 </div>
 
-
             </div>
-            <div id="item2" className="carousel-item w-full">
-                <img src={banner} className="w-full " />
-                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            <div><div className='text-center text-red-300 text-6xl mt-8 font-serif'>Our Dolls Gallery</div>
+                <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 mt-7'>
+                    <div className="card w-96 bg-base-100 shadow-xl ">
+                        {/* <div className="card-body">
+                        <h2 className="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                    </div> */}
+                        <figure><img src={gallary1} alt="Shoes" /></figure>
+                    </div>
+                    <div className="card w-96 bg-base-100 shadow-xl">
+                        {/* <div className="card-body">
+                        <h2 className="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                    </div> */}
+                        <figure><img src={gallary2} alt="Shoes" /></figure>
+                    </div>
+                    <div className="card w-96 bg-base-100 shadow-xl">
+                        {/* <div className="card-body">
+                        <h2 className="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                    </div> */}
+                        <figure><img src={gallary3} alt="Shoes" /></figure>
+                    </div>
+                    <div className="card w-96 bg-base-100 shadow-xl">
+                        {/* <div className="card-body">
+                        <h2 className="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                    </div> */}
+                        <figure><img src={gallary4} alt="Shoes" /></figure>
+                    </div>
+                    <div className="card w-96 bg-base-100 shadow-xl">
+                        {/* <div className="card-body">
+                        <h2 className="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                    </div> */}
+                        <figure><img src={gallary5} alt="Shoes" /></figure>
+                    </div>
+                    <div className="card w-96 bg-base-100 shadow-xl">
+                        {/* <div className="card-body">
+                        <h2 className="card-title">Shoes!</h2>
+                        <p>If a dog chews shoes whose shoes does he choose?</p>
+                    </div> */}
+                        <figure><img src={gallary6} alt="Shoes" /></figure>
+                    </div></div>
 
-                </div>
-            </div>
-            <div id="item3" className="carousel-item w-full">
-                <img src={banner} className="w-full " />
-                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+            </div >
+        </div >
+    )
 
-                </div>
-            </div>
-            <div id="item4" className="carousel-item w-full">
-                <img src={banner} className="w-full e" />
-                <div className="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-
-                </div>
-            </div>
-        </div>
-            <div className="flex justify-center w-full py-2 gap-2">
-                <a href="#item1" className="btn btn-xs">1</a>
-                <a href="#item2" className="btn btn-xs">2</a>
-                <a href="#item3" className="btn btn-xs">3</a>
-                <a href="#item4" className="btn btn-xs">4</a>
-            </div></div>
-    );
 };
 
 export default Header;

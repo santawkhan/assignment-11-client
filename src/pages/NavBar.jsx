@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
+import './Css/Banner.css'
 
 
 const NavBar = () => {
@@ -12,13 +13,13 @@ const NavBar = () => {
             .catch(error => console.log(error))
     }
 
-    const navItems = <> <li > <Link to="/">Home</Link></li>
-        <li><Link to="/allToys">All Toys</Link></li>
-        <li><Link to="/myToys">My Toys</Link></li>
-        <li><Link to="/addToys">Add A Toy</Link></li>
-        <li><Link to="/blogs">Blogs</Link></li>
+    const navItems = <> <li > <Link to="/"><span className='text-xl text-blue-800'>Home</span></Link></li>
+        <li><Link to="/allToys"><span className='text-xl text-blue-800'>All Toys</span></Link></li>
+
+
+        <li><Link to="/blogs"><span className='text-xl text-blue-800'>Blogs</span></Link></li>
         {
-            user?.email ? <li><button onClick={handleLogout}>LogOut</button></li> : <li><Link to="/login">Login</Link></li>
+            user?.email ? <> <li><Link to="/addToys"><span className='text-xl text-blue-800'>Add A Toy</span></Link></li> <li><Link to="/myToys"><span className='text-xl text-blue-800'>My Toys</span></Link></li>  <img src={user?.photoURL} className='rounded-full w-12' alt="" /> <li><button onClick={handleLogout}><span className='text-xl text-blue-800' >LogOut</span></button></li> </> : <li><Link to="/login"><span className='text-xl text-blue-800'></span></Link></li>
         }
 
 

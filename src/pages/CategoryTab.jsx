@@ -17,12 +17,12 @@ const CategoryTab = () => {
     }, [])
     return (
         <div className='mt-3'>
-            <h3 className='text-center'>Shop By Category</h3>
+            <h3 className='text-center text-5xl font-serif mt-8 text-red-300 font-bold mb-6'>Shop By Category</h3>
             <Tabs className='text-center'>
-                <TabList>
-                    <Tab>Baby Dolls</Tab>
-                    <Tab>Barbie Dolls</Tab>
-                    <Tab>American girl</Tab>
+                <TabList >
+                    <Tab><span className='text-xl font-bold text-red-300 '>Baby Dolls</span></Tab>
+                    <Tab><span className='text-xl font-bold text-red-300 '>Barbie Dolls</span></Tab>
+                    <Tab><span className='text-xl font-bold text-red-300 '>American Girls</span></Tab>
                 </TabList>
 
                 <TabPanel>

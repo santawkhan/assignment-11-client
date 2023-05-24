@@ -11,6 +11,8 @@ import DollsDetailsOne from "../pages/DollsDetailsOne";
 import DollDetailsTwo from "../pages/DollDetailsTwo";
 import DollDetailsThree from "../pages/DollDetailsThree";
 import PrivateRoute from "./PrivateRoute";
+import UpdateToy from "../pages/UpdateToy";
+import ViewDetails from "../pages/ViewDetails";
 
 
 
@@ -36,7 +38,7 @@ const router = createBrowserRouter([
             },
             {
                 path: '/blogs',
-                element: <Blogs></Blogs>
+                element: <PrivateRoute><Blogs></Blogs></PrivateRoute>
             },
             {
                 path: '/myToys',
@@ -51,18 +53,27 @@ const router = createBrowserRouter([
                 element: <SignUp></SignUp>
             },
             {
+                path: '/details/:id',
+                element: <PrivateRoute><ViewDetails></ViewDetails></PrivateRoute>
+            },
+            {
                 path: '/dollOne/:id',
-                element: <DollsDetailsOne></DollsDetailsOne>,
-                loader: ({ params }) => fetch(`http://localhost:5000/category/${params.id}`)
+                element: <PrivateRoute><DollsDetailsOne></DollsDetailsOne></PrivateRoute>,
+
             },
             {
                 path: '/dollTwo/:id',
-                element: <DollDetailsTwo></DollDetailsTwo>
+                element: <PrivateRoute><DollDetailsTwo></DollDetailsTwo></PrivateRoute>
             },
             {
                 path: '/dollThree/:id',
-                element: <DollDetailsThree></DollDetailsThree>
-            }
+                element: <PrivateRoute><DollDetailsThree></DollDetailsThree></PrivateRoute>
+            },
+            {
+                path: '/updateToy/:id',
+                element: <UpdateToy></UpdateToy>,
+                loader: ({ params }) => fetch(`http://localhost:5000/toy/${params.id}`)
+            },
 
 
         ]

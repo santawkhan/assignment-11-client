@@ -7,14 +7,36 @@ const AllToys = () => {
     useEffect(() => {
         fetch('http://localhost:5000/addedToy')
             .then(res => res.json())
-            .then(data => console.log(data))
+            .then(data => setAllToys(data))
     }, [])
     return (
-        <div>
-            {
-                allToys.map(allToy => <Toys key={allToy._id} allToy={allToy}></Toys>)
-            }
+        <div className='mt-7'>
+            <div className="overflow-x-auto">
+                <table className="table table-zebra w-full">
+                    {/* head */}
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th>Toy Name</th>
+                            <th>Seller Name</th>
+                            <th>Sub-category</th>
+                            <th>Price</th>
+                            <th>Available Quantity</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {/* row 1 */}
+                        {
+                            allToys.map(allToy => <Toys key={allToy._id} allToy={allToy}></Toys>)
+                        }
+
+                    </tbody>
+                </table>
+            </div>
         </div>
+
+
     );
 };
 

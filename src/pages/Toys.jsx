@@ -1,41 +1,20 @@
 /* eslint-disable no-unused-vars */
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Toys = ({ allToy }) => {
-    const { name, SellerName, SubCategory, price, AvailableQuantity } = allToy
+    const { _id, name, SellerName, SubCategory, price, AvailableQuantity } = allToy
     return (
-        <div className='mt-7'>
-            <div className="overflow-x-auto">
-                <table className="table table-zebra w-full">
-                    {/* head */}
-                    <thead>
-                        <tr>
-                            <th></th>
-                            <th>Toy Name</th>
-                            <th>Seller Name</th>
-                            <th>Sub-category</th>
-                            <th>Price</th>
-                            <th>Available Quantity</th>
-                            <th>Details</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {/* row 1 */}
-                        <tr>
-                            <th></th>
-                            <td>{name}</td>
-                            <td> {SellerName} </td>
-                            <td>{SubCategory} </td>
-                            <td> {price} </td>
-                            <td> {AvailableQuantity} </td>
-                            <td><button className='btn btn-success'>View Details</button></td>
+        <tr>
+            <th></th>
+            <td>{name}</td>
+            <td> {SellerName} </td>
+            <td>{SubCategory} </td>
+            <td> {price} </td>
+            <td> {AvailableQuantity} </td>
+            <td><Link to={`/details/${_id}`}><button className='btn btn-success'>View Details</button></Link></td>
 
-                        </tr>
-
-                    </tbody>
-                </table>
-            </div>
-        </div>
+        </tr>
     );
 };
 
