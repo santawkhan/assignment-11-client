@@ -2,6 +2,7 @@
 import React, { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../provider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const UpdateToy = () => {
     const { user } = useContext(AuthContext);
@@ -34,7 +35,15 @@ const UpdateToy = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                console.log(data);
+                if (data.modifiedCount > 0) {
+                    Swal.fire(
+                        'Success!',
+                        'Data has been updated',
+                        'success'
+                    )
+                }
+
             })
 
 
@@ -105,9 +114,9 @@ const UpdateToy = () => {
                 </div>
 
 
-                <div className="form-control mt-6">
+                <div className="form-control  mt-6">
 
-                    <input className='btn btn-secondary' type="submit" value="Update Toy" />
+                    <input className='btn btn-secondary w-60 mx-auto mb-7' type="submit" value="Update Toy" />
                 </div>
             </form>
 
