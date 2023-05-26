@@ -3,7 +3,9 @@ import Toys from './Toys';
 
 const AllToys = () => {
     const [allToys, setAllToys] = useState([]);
-
+    useEffect(() => {
+        document.title = 'Doll House | All Toys'
+    }, []);
     useEffect(() => {
         fetch('http://localhost:5000/addedToy')
             .then(res => res.json())

@@ -13,7 +13,8 @@ const CategoryTab = () => {
     useEffect(() => {
         fetch('http://localhost:5000/category')
             .then(res => res.json())
-            .then(data => setcategoryDolls(data))
+            .then(data => setcategoryDolls(data));
+
     }, [])
     return (
         <div className='mt-3'>

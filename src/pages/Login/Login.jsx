@@ -1,5 +1,5 @@
 /* eslint-disable no-unused-vars */
-import React, { useContext } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
@@ -9,6 +9,10 @@ import login from '../../assets/images/Mobile-login-Cristina.jpg'
 
 
 const Login = () => {
+
+    useEffect(() => {
+        document.title = 'Doll House | Login'
+    }, []);
     const { signIn } = useContext(AuthContext);
     const navigate = useNavigate();
     const location = useLocation();
@@ -35,6 +39,7 @@ const Login = () => {
 
 
     const handleGoogleSignIn = () => {
+
         signInWithPopup(auth, provider)
             .then(result => {
                 const user = result.user;
