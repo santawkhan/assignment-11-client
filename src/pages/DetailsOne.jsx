@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Swal from 'sweetalert2';
 
 const DetailsOne = ({ categoryDoll }) => {
-    const { picture_1, toy_name_1, price_1, _id } = categoryDoll
+    const { picture_1, toy_name_1, price_1, _id } = categoryDoll;
+
     return (
         <div>
             <div className="card w-96 bg-base-100 shadow-xl">

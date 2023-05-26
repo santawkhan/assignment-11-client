@@ -18,6 +18,7 @@ const AddToys = () => {
         const AvailableQuantity = form.availableQuantity.value;
         const Description = form.detailDescription.value;
         const pictureUrl = form.pictureUrl.value;
+        form.reset();
 
         const addToy = {
             name, email, SellerName, SubCategory, price, ratings, AvailableQuantity, Description, pictureUrl

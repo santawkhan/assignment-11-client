@@ -1,6 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React, { useContext } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import app from '../../firebase/firebase.config';
@@ -10,6 +10,10 @@ import login from '../../assets/images/Mobile-login-Cristina.jpg'
 
 const Login = () => {
     const { signIn } = useContext(AuthContext);
+    const navigate = useNavigate();
+    const location = useLocation();
+    console.log(location);
+    const from = location.state?.from?.pathname || '/';
     const auth = getAuth(app);
     const provider = new GoogleAuthProvider()
     const handleLogin = event => {
@@ -18,6 +22,8 @@ const Login = () => {
         const email = form.email.value;
         const password = form.password.value;
         console.log(email, password);
+        form.reset();
+        navigate(from, { replace: true })
 
         signIn(email, password)
             .then(result => {
