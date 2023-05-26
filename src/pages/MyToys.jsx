@@ -2,6 +2,7 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { AuthContext } from '../provider/AuthProvider';
 import ToysRow from './ToysRow';
+import Swal from 'sweetalert2';
 
 const MyToys = () => {
     const { user } = useContext(AuthContext);
@@ -16,23 +17,42 @@ const MyToys = () => {
 
 
     const handleDelete = id => {
-        const proceed = confirm('Are You Sure To Delete')
+        // const proceed = confirm('Are You Sure To Delete')
 
-        if (proceed) {
-            fetch(`http://localhost:5000/toy/${id}`, {
-                method: 'DELETE'
-            })
-                .then(res => res.json())
-                .then(data => {
-                    console.log(data);
-                    if (data.deletedCount > 0) {
-                        alert('deleted successfully');
-                        const remaining = myToys.filter(myToy => myToy._id !== id);
-                        setMyToys(remaining);
-                    }
-
+        Swal.fire({
+            title: 'Are you sure?',
+            text: "You won't be able to revert this!",
+            icon: 'warning',
+            showCancelButton: true,
+            confirmButtonColor: '#3085d6',
+            cancelButtonColor: '#d33',
+            confirmButtonText: 'Yes, delete it!'
+        }).then((result) => {
+            if (result.isConfirmed) {
+                fetch(`http://localhost:5000/toy/${id}`, {
+                    method: 'DELETE'
                 })
-        }
+                    .then(res => res.json())
+                    .then(data => {
+                        console.log(data);
+                        if (data.deletedCount > 0) {
+                            // alert('deleted successfully');
+                            Swal.fire(
+                                'Deleted!',
+                                'Your file has been deleted.',
+                                'success'
+                            )
+                            const remaining = myToys.filter(myToy => myToy._id !== id);
+                            setMyToys(remaining);
+                        }
+
+                    })
+            }
+        })
+
+
+
+
     }
     return (
         <div>
@@ -78,6 +98,25 @@ const MyToys = () => {
 };
 
 export default MyToys;
+
+
+
+
+// if (proceed) {
+//     fetch(`http://localhost:5000/toy/${id}`, {
+//         method: 'DELETE'
+//     })
+//         .then(res => res.json())
+//         .then(data => {
+//             console.log(data);
+//             if (data.deletedCount > 0) {
+//                 alert('deleted successfully');
+//                 const remaining = myToys.filter(myToy => myToy._id !== id);
+//                 setMyToys(remaining);
+//             }
+
+//         })
+// }
 
 
 
