@@ -19,9 +19,9 @@ const Header = () => {
                 <div id="item1" className="carousel-item w-full">
                     <img src={banner3} className="w-full rounded h-screen" />
                     <div className="absolute  transform -translate-y-1/2 left-10 mt-4 right-5 top-1/2 ">
-                        <h3 className='text-6xl text-black font-bold font-serif'>Collect Your Desired <br /> Doll For Your Child</h3>
-                        <p className='text-4xl text-black font-medium'>Join our community to find <br /> your rare items,and play aroun here.</p>
-                        <button className="btn btn-active mt-3 text-black">Discover Now</button>
+                        <h3 className='text-6xl text-blue-800 font-bold font-serif'>Collect Your Desired <br /> Doll For Your Child</h3>
+                        <p className='text-4xl text-blue-800 font-medium'>Join our community to find <br /> your rare items,and play aroun here.</p>
+                        <button className="btn btn-outline btn-primary mt-4">Discover Now</button>
                     </div>
                 </div>
 

@@ -4,6 +4,8 @@ import { Link } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import app from '../../firebase/firebase.config';
+import { FaGoogle } from "react-icons/fa";
+
 
 const Login = () => {
     const { signIn } = useContext(AuthContext);
@@ -69,7 +71,7 @@ const Login = () => {
 
                             <p>Dont have an account please <Link to={'/signUp'}>SignUp</Link ></p>
                         </div>
-                        <button onClick={handleGoogleSignIn} className='btn btn-secondary'>Google</button>
+                        <button onClick={handleGoogleSignIn} className=' w-48'><FaGoogle /></button>
                     </div>
                 </div>
 
