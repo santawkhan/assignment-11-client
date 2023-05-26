@@ -74,7 +74,7 @@ const PopularSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-right"
+                <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-left"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine">
                     <figure><img src="https://media.istockphoto.com/id/1130858894/photo/adorable-cute-little-toddler-girl-playing-with-doll-happy-healthy-baby-child-having-fun-with.jpg?s=612x612&w=0&k=20&c=TS94E_HkXtOhqTIhrWQ8Zu5_rJJiKa7YcZjJCCWvNq8=" alt="Shoes" /></figure>
@@ -96,7 +96,7 @@ const PopularSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-right"
+                <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-left"
                     data-aos-offset="300"
                     data-aos-easing="ease-in-sine" >
                     <figure><img src="https://media.istockphoto.com/id/525900055/photo/toy-teddy-bear-isolated-on-white.jpg?s=612x612&w=0&k=20&c=_OrSfhuv2rERZD0ZfAI_mbV6p4rGMKvzZCbPFmx0-F0=" alt="Shoes" /></figure>
@@ -118,8 +118,7 @@ const PopularSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-right"
-                    data-aos-offset="300"
+                <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-left" data-aos-offset="300"
                     data-aos-easing="ease-in-sine">
                     <figure><img src="https://media.istockphoto.com/id/511812166/photo/horror-doll.jpg?s=612x612&w=0&k=20&c=OIPmnt7-_jnhKeIcVVQ3cUAOGJdw9Mdzm62a-4m425M=" alt="Shoes" /></figure>
                     <div className="card-body">
@@ -143,11 +142,16 @@ const PopularSection = () => {
             </div>
             <hr />
 
-            <div className='mt-10'><h3 className='text-center  font-serif font-bold text-red-300 text-6xl'>Read Our Latest Articles</h3>
-                <p className='text-center font-bold text-xl mt-5 mb-9 font-mono'>More Articles? <Link to={'/blogs'}><span className="text-blue-500" >Visits our Blog</span ></Link></p>
+            <div className='mt-10'><h3 className='text-center  font-serif font-bold text-red-300 text-6xl' data-aos="flip-left"
+                data-aos-easing="ease-out-cubic"
+                data-aos-duration="2000">Read Our Latest Articles</h3>
+                <p className='text-center font-bold text-xl mt-5 mb-9 font-mono' data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">More Articles? <Link to={'/blogs'}><span className="text-blue-500" >Visits our Blog</span ></Link></p>
 
                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-3'>
-                    <div className="card w-96 bg-base-100 ">
+                    <div className="card w-96 bg-base-100 " data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
                         <figure><img src="https://demo2.madrasthemes.com/uneno/wp-content/uploads/2018/10/Free-To-Be-Kids-Kind-Like-Daddy-credit-Agnes-Teo-370x230.jpg" alt="Shoes" /></figure>
                         <div className="card-body">
                             <h2 className="card-title text-amber-500 font-mono">
@@ -158,7 +162,8 @@ const PopularSection = () => {
 
                         </div>
                     </div>
-                    <div className="card w-96 bg-base-100 ">
+                    <div className="card w-96 bg-base-100 " data-aos="fade-up"
+                        data-aos-anchor-placement="top-bottom" data-aos-duration="3000">
                         <figure><img src="https://demo2.madrasthemes.com/uneno/wp-content/uploads/2018/10/1148857_658101764200104_1422163820_n-370x230.jpg" alt="Shoes" /></figure>
                         <div className="card-body">
                             <h2 className="card-title text-amber-500 font-mono">
@@ -169,7 +174,8 @@ const PopularSection = () => {
 
                         </div>
                     </div>
-                    <div className="card w-96 bg-base-100 ">
+                    <div className="card w-96 bg-base-100 " data-aos="fade-up" data-aos-duration="3000"
+                        data-aos-anchor-placement="top-bottom">
                         <figure><img src="https://demo2.madrasthemes.com/uneno/wp-content/uploads/2018/09/D2348-370x230.jpg" alt="Shoes" /></figure>
                         <div className="card-body">
                             <h2 className="card-title text-amber-500 font-mono">
