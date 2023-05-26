@@ -8,7 +8,9 @@ const MyToys = () => {
     const { user } = useContext(AuthContext);
     const [myToys, setMyToys] = useState([])
 
-
+    useEffect(() => {
+        document.title = 'Doll House | MyToys'
+    }, []);
     useEffect(() => {
         fetch(`http://localhost:5000/toy?email=${user?.email}`)
             .then(res => res.json())

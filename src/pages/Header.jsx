@@ -18,7 +18,8 @@ const Header = () => {
             <div className="carousel w-full">
                 <div id="item1" className="carousel-item w-full">
                     <img src={banner3} className="w-full rounded h-screen" />
-                    <div className="absolute  transform -translate-y-1/2 left-10 mt-4 right-5 top-1/2 ">
+                    <div className="absolute  transform -translate-y-1/2 left-10 mt-4 right-5 top-1/2  " data-aos="fade-up"
+                        data-aos-duration="3000">
                         <h3 className='text-6xl text-blue-800 font-bold font-serif'>Collect Your Desired <br /> Doll For Your Child</h3>
                         <p className='text-4xl text-blue-800 font-medium'>Join our community to find <br /> your rare items,and play aroun here.</p>
                         <button className="btn btn-outline btn-primary mt-4">Discover Now</button>
@@ -26,44 +27,51 @@ const Header = () => {
                 </div>
 
             </div>
-            <div><div className='text-center text-red-300 text-6xl mt-8 font-serif'>Our Dolls Gallery</div>
+            <div><div className='text-center text-red-300 text-6xl mt-8 font-serif' data-aos="fade-up"
+                data-aos-duration="3000">Our Dolls Gallery</div>
                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 mt-7'>
-                    <div className="card w-96 bg-base-100 shadow-xl ">
+                    <div className="card w-96 bg-base-100 shadow-xl  " data-aos="fade-up"
+                        data-aos-duration="3000">
                         {/* <div className="card-body">
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                     </div> */}
                         <figure><img src={gallary1} alt="Shoes" /></figure>
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl">
+                    <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up"
+                        data-aos-duration="3000">
                         {/* <div className="card-body">
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                     </div> */}
                         <figure><img src={gallary2} alt="Shoes" /></figure>
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl">
+                    <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up"
+                        data-aos-duration="3000">
                         {/* <div className="card-body">
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                     </div> */}
                         <figure><img src={gallary3} alt="Shoes" /></figure>
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl">
+                    <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up"
+                        data-aos-duration="3000" >
                         {/* <div className="card-body">
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                     </div> */}
                         <figure><img src={gallary4} alt="Shoes" /></figure>
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl">
+                    <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up"
+                        data-aos-duration="3000">
                         {/* <div className="card-body">
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
                     </div> */}
                         <figure><img src={gallary5} alt="Shoes" /></figure>
                     </div>
-                    <div className="card w-96 bg-base-100 shadow-xl">
+                    <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up"
+                        data-aos-duration="3000">
                         {/* <div className="card-body">
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
