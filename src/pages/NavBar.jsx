@@ -19,8 +19,9 @@ const NavBar = () => {
 
 
         <li><Link to="/blogs"><span className='text-xl text-blue-800'>Blogs</span></Link></li>
+        {/* <li><button className='btn btn-success'><Link to="/login"><span className='text-xl text-blue-800'>Login</span></Link></button></li> */}
         {
-            user?.email ? <> <li><Link to="/addToys"><span className='text-xl text-blue-800'>Add A Toy</span></Link></li> <li><Link to="/myToys"><span className='text-xl text-blue-800'>My Toys</span></Link></li>  <img src={user?.photoURL} className='rounded-full w-12' title={user?.displayName} alt="" /> <li><button className='btn btn-success' onClick={handleLogout}><span className='text-xl text-blue-800 ' >LogOut</span></button></li> </> : <li><Link to="/login"><span className='text-xl text-blue-800'></span></Link></li>
+            user?.email ? <> <li><Link to="/addToys"><span className='text-xl text-blue-800'>Add A Toy</span></Link></li> <li><Link to="/myToys"><span className='text-xl text-blue-800'>My Toys</span></Link></li>  <img src={user?.photoURL} className='rounded-full w-12' title={user?.displayName} alt="" /> <li><button className='btn btn-success' onClick={handleLogout}><span className='text-xl text-blue-800 ' >LogOut</span></button></li> </> : <li><Link to="/login"><span className='text-xl text-blue-800'>Login</span></Link></li>
         }
 
 

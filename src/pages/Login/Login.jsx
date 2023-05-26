@@ -5,6 +5,7 @@ import { AuthContext } from '../../provider/AuthProvider';
 import { GoogleAuthProvider, getAuth, signInWithPopup } from 'firebase/auth';
 import app from '../../firebase/firebase.config';
 import { FaGoogle } from "react-icons/fa";
+import login from '../../assets/images/Mobile-login-Cristina.jpg'
 
 
 const Login = () => {
@@ -42,11 +43,12 @@ const Login = () => {
             <div className="hero min-h-screen bg-base-200">
                 <div className="hero-content flex-col lg:flex-row">
                     <div className="text-center lg:text-left w-1/2">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <h1 className="text-5xl text-center font-serif font-bold">Welcome Back!</h1>
+                        <p className="py-6 w-3/4 "><img src={login} className='rounded-xl' alt="" /></p>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <div className="card-body">
+                            <h3 className='text-center font-serif font-bold text-2xl'>Login</h3>
                             <form onSubmit={handleLogin} >
                                 <div className="form-control">
                                     <label className="label">
@@ -69,13 +71,15 @@ const Login = () => {
                                 </div>
                             </form>
 
-                            <p>Dont have an account please <Link to={'/signUp'}>SignUp</Link ></p>
+                            <p className='font-semibold'>Dont have an account please <Link to={'/signUp'}> <span className='text-blue-800'>SignUp</span> </Link ></p>
+                            <h3 className='text-center font-bold text-xl'>Or</h3>
                         </div>
-                        <button onClick={handleGoogleSignIn} className=' w-48'><FaGoogle /></button>
+                        <button onClick={handleGoogleSignIn} className='font-bold grid grid-cols-2 text-center gap-2 mb-6 btn btn-secondary w-96'><div>SignIn With</div> <div><FaGoogle /></div></button>
                     </div>
                 </div>
 
             </div>
+
         </div>
     );
 };
