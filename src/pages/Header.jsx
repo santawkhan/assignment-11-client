@@ -28,10 +28,10 @@ const Header = () => {
 
             </div>
             <div><div className='text-center text-red-300 text-6xl mt-8 font-serif' data-aos="fade-up"
-                data-aos-duration="3000">Our Dolls Gallery</div>
+                data-aos-duration="8000">Our Dolls Gallery</div>
                 <div className='grid grid-cols-1 lg:grid-cols-3 gap-3 mt-7'>
                     <div className="card w-96 bg-base-100 shadow-xl  " data-aos="fade-up"
-                        data-aos-duration="3000">
+                        data-aos-duration="8000">
                         {/* <div className="card-body">
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -39,7 +39,7 @@ const Header = () => {
                         <figure><img src={gallary1} alt="Shoes" /></figure>
                     </div>
                     <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up"
-                        data-aos-duration="3000">
+                        data-aos-duration="8000">
                         {/* <div className="card-body">
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -47,7 +47,7 @@ const Header = () => {
                         <figure><img src={gallary2} alt="Shoes" /></figure>
                     </div>
                     <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up"
-                        data-aos-duration="3000">
+                        data-aos-duration="8000">
                         {/* <div className="card-body">
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -55,7 +55,7 @@ const Header = () => {
                         <figure><img src={gallary3} alt="Shoes" /></figure>
                     </div>
                     <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up"
-                        data-aos-duration="3000" >
+                        data-aos-duration="8000" >
                         {/* <div className="card-body">
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -63,7 +63,7 @@ const Header = () => {
                         <figure><img src={gallary4} alt="Shoes" /></figure>
                     </div>
                     <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up"
-                        data-aos-duration="3000">
+                        data-aos-duration="8000">
                         {/* <div className="card-body">
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -71,7 +71,7 @@ const Header = () => {
                         <figure><img src={gallary5} alt="Shoes" /></figure>
                     </div>
                     <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-up"
-                        data-aos-duration="3000">
+                        data-aos-duration="8000">
                         {/* <div className="card-body">
                         <h2 className="card-title">Shoes!</h2>
                         <p>If a dog chews shoes whose shoes does he choose?</p>

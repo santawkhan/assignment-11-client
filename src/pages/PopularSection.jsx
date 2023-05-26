@@ -4,11 +4,13 @@ import { Link } from 'react-router-dom';
 const PopularSection = () => {
     return (
         <div className='mt-16 ' >        <hr />
-            <h3 className='text-center  font-serif font-bold text-red-300 text-6xl'>Popular Products</h3>
-            <p className='text-center mt-3 mb-9  font-bold text-red-300 text-2xl'>Shoppers like you are looking at these Products. Let’s take a look!</p>
+            <h3 className='text-center  font-serif font-bold text-red-300 text-6xl' data-aos="flip-right" data-aos-duration="4000">Popular Products</h3>
+            <p className='text-center mt-3 mb-9  font-bold text-red-300 text-2xl' data-aos="flip-right" data-aos-duration="4000">Shoppers like you are looking at these Products. Let’s take a look!</p>
             <hr />
             <div className='grid grid-cols-1 lg:grid-cols-3 mt-4 gap-4 '>
-                <div className="card w-96 bg-base-100  shadow-xl">
+                <div className="card w-96 bg-base-100  shadow-xl" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <figure><img src="https://media.istockphoto.com/id/157668645/photo/hand-made-doll-isolated.jpg?s=612x612&w=0&k=20&c=MQDXxAnzqsGA6nOKdJ6v_xHOkj7CSRAQZO2w1FoQHEY=" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title font-mono">
@@ -28,7 +30,9 @@ const PopularSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <figure><img src="https://media.istockphoto.com/id/1137380717/photo/pinky-plushie-doll-isolated-on-white-background-with-shadow-reflection-nice-contemporary-rag.jpg?s=612x612&w=0&k=20&c=FOWw89AKj7v6aLM4rD3oH9uqCdlX9a4TdgiSS13rtP8=" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title font-mono">
@@ -48,7 +52,9 @@ const PopularSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" >
                     <figure><img src="https://media.istockphoto.com/id/157505066/photo/teddy-bear.jpg?s=612x612&w=0&k=20&c=Hv3PQLQGIibKu1StNS2S1ltwpWZS3t4YcrizQTIlJqM=" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title font-mono">
@@ -68,7 +74,9 @@ const PopularSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <figure><img src="https://media.istockphoto.com/id/1130858894/photo/adorable-cute-little-toddler-girl-playing-with-doll-happy-healthy-baby-child-having-fun-with.jpg?s=612x612&w=0&k=20&c=TS94E_HkXtOhqTIhrWQ8Zu5_rJJiKa7YcZjJCCWvNq8=" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title font-mono">
@@ -88,7 +96,9 @@ const PopularSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine" >
                     <figure><img src="https://media.istockphoto.com/id/525900055/photo/toy-teddy-bear-isolated-on-white.jpg?s=612x612&w=0&k=20&c=_OrSfhuv2rERZD0ZfAI_mbV6p4rGMKvzZCbPFmx0-F0=" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title font-mono">
@@ -108,7 +118,9 @@ const PopularSection = () => {
                         </div>
                     </div>
                 </div>
-                <div className="card w-96 bg-base-100 shadow-xl">
+                <div className="card w-96 bg-base-100 shadow-xl" data-aos="fade-right"
+                    data-aos-offset="300"
+                    data-aos-easing="ease-in-sine">
                     <figure><img src="https://media.istockphoto.com/id/511812166/photo/horror-doll.jpg?s=612x612&w=0&k=20&c=OIPmnt7-_jnhKeIcVVQ3cUAOGJdw9Mdzm62a-4m425M=" alt="Shoes" /></figure>
                     <div className="card-body">
                         <h2 className="card-title font-mono">

@@ -6,7 +6,7 @@ const DetailsTwo = ({ categoryDoll }) => {
     const { picture_2, toy_name_2, price_2, _id } = categoryDoll
     return (
         <div>
-            <div className="card w-96 bg-base-100 shadow-xl">
+            <div className="card w-96 bg-base-100 shadow-xl" data-aos="zoom-in" data-aos-duration="3000">
                 <figure><img src={picture_2} alt="Shoes" /></figure>
                 <div className="card-body">
                     <h2 className="card-title font-bold">{toy_name_2}</h2>
