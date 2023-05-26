@@ -1,6 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useContext } from 'react';
 import { AuthContext } from '../provider/AuthProvider';
+import Swal from 'sweetalert2';
 
 const AddToys = () => {
     const { user } = useContext(AuthContext)
@@ -32,7 +33,14 @@ const AddToys = () => {
         })
             .then(res => res.json())
             .then(data => {
-                console.log(data)
+                console.log(data);
+                if (data.insertedId) {
+                    Swal.fire(
+                        'WOW!',
+                        'Your data has been added.',
+                        'success'
+                    )
+                }
             })
 
 
@@ -105,7 +113,7 @@ const AddToys = () => {
 
                 <div className="form-control mt-6">
 
-                    <input className='btn btn-secondary' type="submit" value="Add Toy" />
+                    <input className='btn btn-secondary w-60 mx-auto mb-10' type="submit" value="Add Toy" />
                 </div>
             </form>
 
