@@ -1,6 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../provider/AuthProvider';
+import img from '../../assets/images/signup.webp'
 
 const SignUp = () => {
 
@@ -28,8 +29,8 @@ const SignUp = () => {
 
                 <div className="hero-content flex-col lg:flex-row">
                     <div className="text-center lg:text-left w-1/2">
-                        <h1 className="text-5xl font-bold">Login now!</h1>
-                        <p className="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                        <h1 className="text-5xl font-bold">Please SignUp now!</h1>
+                        <p className="py-6"><img src={img} alt="" /></p>
                     </div>
                     <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
                         <h3 className='text-center font-serif font-bold text-2xl mt-4'>Sign Up</h3>
