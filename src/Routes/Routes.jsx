@@ -74,7 +74,7 @@ const router = createBrowserRouter([
             {
                 path: '/updateToy/:id',
                 element: <UpdateToy></UpdateToy>,
-                loader: ({ params }) => fetch(`http://localhost:5000/toy/${params.id}`)
+                loader: ({ params }) => fetch(`https://doll-house-server-smoky.vercel.app/toy/${params.id}`)
             },
 
 

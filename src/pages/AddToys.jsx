@@ -25,7 +25,7 @@ const AddToys = () => {
         }
         console.log(addToy);
 
-        fetch('http://localhost:5000/addedToy', {
+        fetch('https://doll-house-server-smoky.vercel.app/addedToy', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

@@ -6,7 +6,7 @@ const ViewDetails = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/addedToy/${id}`)
+        fetch(`https://doll-house-server-smoky.vercel.app/addedToy/${id}`)
             .then((res) => res.json())
             .then((data) => setDetails(data));
 

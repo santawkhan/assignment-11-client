@@ -7,7 +7,7 @@ const DollsDetailsOne = () => {
     const { id } = useParams();
 
     useEffect(() => {
-        fetch(`http://localhost:5000/category/${id}`)
+        fetch(`https://doll-house-server-smoky.vercel.app/category/${id}`)
             .then((res) => res.json())
             .then((data) => setDollData(data));
 

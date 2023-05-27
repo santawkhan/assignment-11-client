@@ -7,7 +7,7 @@ const AllToys = () => {
         document.title = 'Doll House | All Toys'
     }, []);
     useEffect(() => {
-        fetch('http://localhost:5000/addedToy')
+        fetch('https://doll-house-server-smoky.vercel.app/addedToy')
             .then(res => res.json())
             .then(data => setAllToys(data))
     }, [])

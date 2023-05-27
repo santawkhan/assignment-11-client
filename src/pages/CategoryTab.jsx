@@ -11,7 +11,7 @@ const CategoryTab = () => {
     const [categoryDolls, setcategoryDolls] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:5000/category')
+        fetch('https://doll-house-server-smoky.vercel.app/category')
             .then(res => res.json())
             .then(data => setcategoryDolls(data));
 

@@ -12,7 +12,7 @@ const MyToys = () => {
         document.title = 'Doll House | MyToys'
     }, []);
     useEffect(() => {
-        fetch(`http://localhost:5000/toy?email=${user?.email}`)
+        fetch(`https://doll-house-server-smoky.vercel.app/toy?email=${user?.email}`)
             .then(res => res.json())
             .then(data => setMyToys(data))
     }, []);
@@ -31,7 +31,7 @@ const MyToys = () => {
             confirmButtonText: 'Yes, delete it!'
         }).then((result) => {
             if (result.isConfirmed) {
-                fetch(`http://localhost:5000/toy/${id}`, {
+                fetch(`https://doll-house-server-smoky.vercel.app/toy/${id}`, {
                     method: 'DELETE'
                 })
                     .then(res => res.json())
@@ -105,7 +105,7 @@ export default MyToys;
 
 
 // if (proceed) {
-//     fetch(`http://localhost:5000/toy/${id}`, {
+//     fetch(`https://doll-house-server-smoky.vercel.app/toy/${id}`, {
 //         method: 'DELETE'
 //     })
 //         .then(res => res.json())
